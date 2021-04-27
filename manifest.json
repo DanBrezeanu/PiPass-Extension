@@ -1,0 +1,20 @@
+{
+    "name": "PiPass",
+    "description": "PiPass is an offline password manager.",
+    "version": "0.1.0",
+    "manifest_version": 2,
+    "icons": {
+        "48": "./logo_48.png"
+    },
+    "background": {
+        "scripts": ["./js/background.js"]
+    },
+    "browser_action": {
+        "default_popup": "./html/menu.html"
+    },
+    "permissions": [
+        "tabs",
+        "https://*/",
+        "storage"
+    ] 
+}
