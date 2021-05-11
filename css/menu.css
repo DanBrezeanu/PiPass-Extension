@@ -13,5 +13,38 @@
   }
 
 body {
-  min-width: 480px;
+  min-width: 380px;
+}
+
+.navbar {
+  width: 100%;
+  background-color: #fff;
+  overflow: auto;
+}
+
+.navbar a {
+  float: left;
+  padding: 6px;
+  color: black;
+  text-decoration: none;
+  font-size: 22px;
+}
+
+.navbar a:hover {
+  background-color: #fff;
+}
+
+.active {
+  color: #6ea9ec !important;
+}
+
+.right-icon {
+  font-size: 20px;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
 }

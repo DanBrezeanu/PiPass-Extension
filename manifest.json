@@ -9,12 +9,19 @@
     "background": {
         "scripts": ["./js/background.js"]
     },
+    "content_scripts": [
+        {
+            "matches": ["https://*/"],
+            "js": ["./js/foreground.js"]
+        }
+    ],
     "browser_action": {
         "default_popup": "./html/menu.html"
     },
     "permissions": [
         "tabs",
         "https://*/",
-        "storage"
-    ] 
+        "storage",
+        "http://127.0.0.1:5193/"
+    ]
 }
