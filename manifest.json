@@ -22,6 +22,7 @@
         "tabs",
         "https://*/",
         "storage",
-        "http://127.0.0.1:5193/"
+        "http://127.0.0.1:5193/",
+        "chrome://favicon/"
     ]
 }
